@@ -19,7 +19,7 @@
     }
 
     var getNoOfItems = function () {
-      $scope.lunch_items = sanitize($scope.lunch_menu.split(',')); // Gets the items given as input and sanitizes it
+      $scope.lunch_items = sanitize($scope.lunch_menu.split(', ')); // Gets the items given as input and sanitizes it
       return $scope.lunch_items.length; // Returns the length
     }
 
