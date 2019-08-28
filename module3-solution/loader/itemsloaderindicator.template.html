@@ -1,0 +1,21 @@
+<div class="loader"></div>
+<div class="col-sm-12" ng-if="narrow.items.length">
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">Short Name</th>
+      <th scope="col">Description</th>
+      <th scope="col"></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="item in narrow.items">
+      <td> {{ item.name }} </td>
+      <td> {{ item.short_name }} </td>
+      <td> {{ item.description }} </td>
+      <td> <button class="btn btn-primary" ng-click="narrow.onRemove({index: $index});">Don't want this one!</button> </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
