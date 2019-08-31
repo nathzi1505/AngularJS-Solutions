@@ -13,13 +13,13 @@
     var sanitize = function (strArray) {
       var resultArray = [];
       for (var i = 0; i < strArray.length; i++)
-        if (strArray[i] !== ' ')
+        if (strArray[i] !== '')
           resultArray.push(strArray[i]);
       return resultArray;
     }
 
     var getNoOfItems = function () {
-      $scope.lunch_items = sanitize($scope.lunch_menu.split(',')); // Gets the items given as input and sanitizes it
+      $scope.lunch_items = sanitize($scope.lunch_menu.split(', ')); // Gets the items given as input and sanitizes it
       return $scope.lunch_items.length; // Returns the length
     }
 
