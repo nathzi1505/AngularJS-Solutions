@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MenuApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Menu App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      .categories:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+
+    <ui-view></ui-view>
+
+    <!-- Libraries -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- Importing the Modules -->
+    <script src="src/menuapp/data.module.js"></script>
+    <script src="src/menuapp/menuapp.module.js"></script>
+
+    <!-- Imporing the MenuDataService -->
+    <script src="src/menuapp/menudata.service.js"></script>
+    <!-- Importing the Categories component -->
+    <script src="src/menuapp/categories.component.js"></script>
+    <script src="src/menuapp/categories.controller.js"></script>
+    <!-- Importing the Items component -->
+    <script src="src/menuapp/items.component.js"></script>
+    <script src="src/menuapp/items.controller.js"></script>
+
+    <!-- Importing the Routes file -->
+    <script src="src/menuapp/routes.js"></script>
+
+  </body>
+</html>
