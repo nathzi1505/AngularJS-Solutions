@@ -51,7 +51,7 @@
         <label for="menuItem">Menu Item</label>
         <input type="text" name="menuItem" class="form-control" id="menuItem" placeholder="A1"
           ng-model="signUpCtrl.user.menuItem"
-          required ng-blur="signUpCtrl.checkMenuItem(signUpCtrl.user.menuItem)">
+          required ng-keyup="signUpCtrl.checkMenuItem(signUpCtrl.user.menuItem)">
           <span
             ng-if="signUpForm.menuItem.$error.required && signUpForm.menuItem.$touched">
             Favourite Menu Item is required
