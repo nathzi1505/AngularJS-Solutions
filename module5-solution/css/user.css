@@ -1,0 +1,11 @@
+#signup-title, #myinfo-title {
+  text-align: center;
+}
+
+.capitalize {
+   text-transform: capitalize;
+}
+
+#signup-button {
+  text-align: center;
+}

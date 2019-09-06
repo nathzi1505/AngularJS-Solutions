@@ -1,0 +1,34 @@
+<div id="myinfo-title" class="container">
+  <h1> My Info </h1>
+</div>
+
+<div class="container">
+  <div class="col-xs-6" ng-if="myInfoCtrl.userInfo">
+    <div>
+      <label for="Name"> Name : </label>
+        {{myInfoCtrl.userInfo.first}} {{myInfoCtrl.userInfo.last}}
+    </div>
+    <div>
+      <label for="email"> Email Id : </label>
+        {{myInfoCtrl.userInfo.email}}
+    </div>
+    <div>
+      <label for="phone"> Phone : </label>
+        {{myInfoCtrl.userInfo.phone}}
+    </div>
+    <div>
+      <label for="title"> Favourite Item : </label>
+        {{myInfoCtrl.userInfo.title}}
+    </div>
+    <div class="capitalize">
+      <label for="description"> Description : </label>
+        {{myInfoCtrl.userInfo.description}}
+    </div>
+    <div>
+      <img class="img-responsive" width="250" height="150" ng-src="{{myInfoCtrl.MyApiPath}}/images/{{myInfoCtrl.userInfo.menuItem}}.jpg" alt="Favourite Menu Item">
+    </div>
+  </div>
+  <div id="signup-button" ng-if="!myInfoCtrl.userInfo">
+    <button class ="btn btn-primary btn-lg" ui-sref="public.signup"> Not Signed Up Yet. Sign up Now! </button>
+  </div>
+</div>
